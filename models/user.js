@@ -7,7 +7,9 @@ const userSchema = new mongoose.Schema({
     email: { type: String, unique: true, require: true },
     password: { type: String, require: true },
     role: { type: String, default: 'user', require: true },
-    profilePicture: { type: String, required: false, default: '' }
+    profilePicture: { type: String, required: false, default: '' },
+    phone: { type: String, required: false, default: '' },
+    visa: { type: String, required: false, default: '' }
 });
 
 userSchema.plugin(mongoosePaginate);
