@@ -148,7 +148,7 @@ const searchMovies = async (req, res, next) => {
 
   try {
     // Define the number of documents you want to fetch
-    const limit = 20;
+    const limit = 6;
 
 // Aggregation pipeline to shuffle the documents
     const pipeline = [

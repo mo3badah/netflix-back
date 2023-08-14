@@ -13,7 +13,6 @@ const { refreshAuthTokenCookie } = require('./config/jwt');
 const authRoutes = require('./routes/authRoutes');
 const userRoutes = require('./routes/userRoutes');
 const movieRoutes = require('./routes/movieRoutes');
-const movieListRoutes = require('./routes/movieListRoutes');
 
 // Activate express
 const app = express();
@@ -37,7 +36,6 @@ app.use(refreshAuthTokenCookie);
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/movies', movieRoutes);
-app.use('/api/movie-list', movieListRoutes);
 
 // Error handler middleware
 app.use(errorHandler)

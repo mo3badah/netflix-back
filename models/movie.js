@@ -19,6 +19,21 @@ const movieSchema = new mongoose.Schema({
     starFourth: String,
     votesCount: Number,
     gross: String,
+    movieId: Number,
+    videos: [
+        // {
+        //     iso_639_1: String,
+        //     iso_3166_1: String,
+        //     name: String,
+        //     key: String,
+        //     site: String,
+        //     size: Number,
+        //     type: String,
+        //     official: Boolean,
+        //     published_at: Date,
+        //     id: String
+        // }
+    ]
 });
 
 movieSchema.plugin(mongoosePaginate);

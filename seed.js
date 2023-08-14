@@ -39,7 +39,7 @@ const seedMovies = async () => {
     try {
         await Movie.deleteMany();
 
-        const seedMoviesJson = require('./data/seedMovies.json');
+        const seedMoviesJson = require('./data/seedMoviesVideos.json');
 
         await Movie.create(seedMoviesJson);
 
